@@ -802,7 +802,7 @@ footer .footerContainer .copyrights {
 .topHeader .container{
   max-width: 1100px;
   margin: 0 auto;
-  padding: 8px 0;
+  padding: 8px;
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
@@ -811,8 +811,16 @@ footer .footerContainer .copyrights {
      -moz-box-pack: flex-end;
       -ms-flex-pack: flex-end;
           justify-content: flex-end;
+  align-items: center;
   gap: 25px;
 }
+
+@media screen and (max-width: 425px){
+  .topHeader{
+    display: none;
+  }
+}
+
 .topHeader p{
   text-align: right;
 }
